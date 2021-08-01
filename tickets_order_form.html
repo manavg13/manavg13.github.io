@@ -39,8 +39,12 @@
 				<h1>Order Event Tickets</h1>
 				<!-- The form starts here... -->
 				<form action="place_order.html" name="order_form" method="post">
+					<!-- fieldset strats here-->
 					<fieldset>
+						<!--Legend Element-->
 						<legend>Member Information</legend>
+						
+							<!--Required fields for forms part 1-->
 							<label for="email">E-Mail:</label>
 							<input type="email" required id="email" name="email" autofocus pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Use format: : characters@characters.domain" />
 							<label for="firstName">First Name:</label>
@@ -58,7 +62,9 @@
 							<label for="phoneNumber">Phone Number:</label>
 							<input type="tel" id="phoneNumber" name="phoneNumber" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="999-999-9999" title="Use format: 999-999-9999"/>
 					</fieldset>
+					
 					<fieldset>
+						<!--Required fields for forms part 2-->
 						<legend>Ordering Information</legend>
 						<label for="event">Event:</label>
 						<select id="event" name="event">
@@ -76,23 +82,27 @@
 						<label for="noOfTickets">Number of Tickets:</label>
 						<input type="number" id="noOfTickets" name="noOfTickets" placeholder="Number of single tickets" />
 					</fieldset>
+					
 					<fieldset id="payment_method">
+						<!--Required fields for forms part 3-->
 						<legend>Payment Method</legend>
 						<input type="radio" id="billMe" name="payment"/>
 						<label for="billMe">Bill Me</label>
 						<input type="radio" id="creditCard" name="payment"/>
 						<label for="creditCard">Credit Card</label>
 					</fieldset>
+					
 					<fieldset>
+						<!--Required fields for forms part 4-->
 						<legend>Credit Card Information</legend>
 						<label for="cardType">Card Type:</label>
-						<select id="cardType" name="cardType" placeholder="">
+						<select id="cardType" name="cardType">
 							<option value="Visa">Visa</option>
 							<option value="Master Card">Master Card</option>
 							<option value="Discover">Discover</option>
 						</select>
 						<label for="cardNumber">Card Number</label>
-						<input type="text" required placeholder="16 digits" pattern="^\d{4}-\d{4}-\d{4}-\d{4}$" id="cardNumber" name="cardNumber" title="Use format: t: 9999-9999-9999-99" />
+						<input type="text" required placeholder="16 digits" pattern="^\d{4}-\d{4}-\d{4}-\d{4}$" id="cardNumber" name="cardNumber" title="Use format: t: 9999-9999-9999-9999" />
 						<label>Expiration Date:</label>
 						<span>
 							<select id="month">
@@ -120,7 +130,9 @@
 							</select>
 						</span>
 					</fieldset>
+					
 					<fieldset id="order">
+						<!--Required fields for forms part 5-->
 						<legend>Submit Your Order</legend>
 						<button type="submit">Submit</button>
 						<button type="reset">Reset Fields</button>

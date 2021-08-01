@@ -172,17 +172,19 @@ main ul#product-categories img {
 	font-weight: bold;
 }
 
-/* Form */
+/* Form CSS*/
 
 form {
 	width: 100%;
 }
 
+/* Fieldset CSS*/
 form fieldset {
 	margin-bottom: 5px;
 	margin-top: 5px;
 }
 
+/* Form CSS for legend only*/
 form fieldset legend {
 	font-weight: bold;
 	color: grey;
@@ -190,6 +192,7 @@ form fieldset legend {
 	font-size: 85%;
 }
 
+/* Form CSS for labels*/
 form label {
 	margin-bottom: 5px;
 	float: left;
@@ -200,6 +203,7 @@ form label {
 	font-size: 90%;
 }
 
+/* Form CSS for input*/
 form input, form select {
 	margin-bottom: 5px;
 	float: left;
@@ -212,6 +216,7 @@ form input, form select {
 	border: 1px solid black;
 }
 
+/* Form CSS for required field*/
 form input:required {
 	border: 2px solid orange;
 }
